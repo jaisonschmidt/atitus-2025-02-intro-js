@@ -17,15 +17,15 @@
     </div>
 
     <script>
-        let nomeProduto = "iPhone";
-        let valor = 6000;
-        let quantidade = 3;
+        function geraFrase(nomeProduto, valorUnitario, quantidade) {
+            let valorTotal = valorUnitario * quantidade;
 
-        let valorTotal = valor * quantidade;
+            return `${nomeProduto}, valor unitário: ${valorUnitario}, total da compra: ${valorTotal}`;
+        }
 
-        let frase = `${nomeProduto}, valor unitário: ${valor}, total da compra: ${valorTotal}`;
-    
-        console.log(frase);
+        console.log(geraFrase("iPhone", 6000, 3));
+        console.log(geraFrase("xBox", 4500, 3));
+        console.log(geraFrase("Notebook", 8000, 3));
     </script>
 </body>
 </html>
