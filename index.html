@@ -17,15 +17,17 @@
     </div>
 
     <script>
-        function geraFrase(nomeProduto, valorUnitario, quantidade) {
-            let valorTotal = valorUnitario * quantidade;
+        function isPositiveOrNegative(value){
+            if (value > 0) {
+                return "positivo";
+            }
 
-            return `${nomeProduto}, valor unitário: ${valorUnitario}, total da compra: ${valorTotal}`;
+            if (value < 0) {
+                return "negativo";
+            }
+
+            return "neutro";
         }
-
-        console.log(geraFrase("iPhone", 6000, 3));
-        console.log(geraFrase("xBox", 4500, 3));
-        console.log(geraFrase("Notebook", 8000, 3));
     </script>
 </body>
 </html>
