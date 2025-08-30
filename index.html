@@ -20,7 +20,17 @@
         let nome = prompt("Informe seu nome");
         let sobrenome = prompt("Informe seu sobrenome");
 
-        alert(`Bem-vindo, ${nome} ${sobrenome}`);
+        if(nome == "") 
+            alert("Você não preencheu seu nome!");
+        
+
+        if(sobrenome == "") 
+            alert("Você não preencheu seu sobrenome");
+        
+
+        if(nome != "" && sobrenome != "") 
+            alert(`Bem-vindo, ${nome} ${sobrenome}`);
+        
     </script>
 </body>
 </html>
